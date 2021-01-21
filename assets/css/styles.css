@@ -1,0 +1,102 @@
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "CARGAR";
+}
+.container-full{
+  margin-top:40px;
+}
+.title-container h1{
+  font-size:25px ;
+}
+.container-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;   
+}
+.card-full{
+border-radius:3px;
+width: 200px;
+margin-bottom:30px;
+position: relative;
+}
+/*-------------------------------------------IMAGE BACKGROUND*/
+.img-container{
+  height:125px;
+  background: #CCC;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+}
+.img-container img{
+  width: 100%;
+  height: auto;
+}
+@supports(object-fit: cover){
+  .img-container img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    }
+}
+/*------------------------------------------------------------------*/
+.content-contact h4{
+  width: 140px;
+}
+.list ul li{
+  text-align: left;
+  word-wrap: break-word;
+}
+.btn-delete {
+  position: absolute;
+  display: inline-block;
+  top:5px;
+  right: 5px;
+  background-color: red;
+  opacity:80%;
+  border-radius:50%;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  }
+
+.btn-delete:hover {
+  text-decoration: none; 
+  opacity:1;
+  color: white;
+}
+.btn-edit{
+  position: absolute;
+  display: inline-block;
+  top: 140px;
+  right:20px;
+  background-color:steelblue;
+  opacity:80%;
+  border-radius:50%;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: .2rem .4rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.btn-edit:hover {
+    text-decoration: none; 
+    opacity:1;
+    color: white;
+  }
+/*-------------------------------------OCULTAR BOTONES INPUT TYPR NUMBER*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  /* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*-------------------------------------------TEXTO SALIDO DE INPUT FILE*/  
+.custom-file-label{
+  overflow: hidden;
+}
